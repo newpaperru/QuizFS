@@ -9,11 +9,18 @@
 </head>
 <body>
    <div class="btnsapple">
-      <div class="red"></div>
+      <div class="red"><a class="close" href="#" onclick="close_window()">x</a></div>
       <div class="yellow"></div>
       <div class="green"></div>
    </div>
    <iframe src="quiz.html" width="500" height="600" class="quiz-frame"></iframe>
 
+<script>
+   function close_window() {
+   if (confirm("Закрыть вкладку?")) {
+     close();
+   }
+}
+</script>
 </body>
 </html>
